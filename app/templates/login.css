@@ -1,0 +1,66 @@
+.login-btn {
+    width: 32.2%;
+    height: 72px;
+    font-size: 40px;
+    margin-bottom: -4px;
+    /* border-radius: 0px; */
+}
+
+.zero-btn {
+    /*width: 32.7%;*/
+    width: 65.9%;
+}
+
+.log-btn {
+    width: 99.8%;
+}
+
+.password-field{
+    height: 60px;
+    margin-bottom: 5px;
+    background-color: #EAEAEA !important;
+    font-size: 42px;
+}
+
+.login-buttons {
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    padding: 0px;
+}
+
+.waiter-sidebar {
+    max-height: calc(100vh - 69px);
+    /*background-color: #337ab7;*/
+    position: absolute;
+    /*overflow-y: scroll;*/
+    padding: 0px;
+    top: 100px;
+    left: 20px;
+}
+
+.login-header {
+    background-color: #337ab7;
+    color: white;
+}
+
+.waiter-btn {
+    height: 90px;
+    width: 100px;
+    margin: 2px;
+}
+
+.clean-btn {
+
+}
+
+.log-btn span {
+    font-size: 30px;
+}
+
+.waiter-active {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}

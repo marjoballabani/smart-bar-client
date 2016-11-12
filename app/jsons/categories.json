@@ -1,0 +1,34 @@
+[
+  {
+    "id":0,
+    "name": "Alkolike"
+  },
+  {
+    "id":1,
+    "name": "Ekspress"
+  },
+  {
+    "id":2,
+    "name": "Freskuese"
+  },
+  {
+    "id":3,
+    "name": "Kokteile"
+  },
+  {
+    "id":4,
+    "name": "Ditor"
+  },
+  {
+    "id":5,
+    "name": "Snack"
+  },
+  {
+    "id":6,
+    "name": "Ushqim"
+  },
+  {
+    "id":7,
+    "name": "Aperitiv"
+  }
+]

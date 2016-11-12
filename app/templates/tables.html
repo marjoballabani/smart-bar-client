@@ -1,0 +1,8 @@
+<div class="col-md-12 table-container" ng-controller="tableController">
+    <button class="btn btn-raised  table"
+            ng-repeat="table in tables"
+            ng-class="{'btn-warning' : table.status == 0 , 'btn-success' : table.status == 1}"
+            ng-click="selectTable(table)" >
+        <span class="glyphicon glyphicon-glass"></span>{{table.nr}}
+    </button>
+</div>

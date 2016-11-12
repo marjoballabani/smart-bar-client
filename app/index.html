@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="webBar">
+<head>
+    <title>Smart Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+    <link  rel="stylesheet" href="lib/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link  rel="stylesheet" href="lib/bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="lib/bower_components/ngDialog/css/ngDialog.css">
+    <link rel="stylesheet" href="lib/bower_components/ngDialog/css/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="lib/animate/animate.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="templates/login.css" rel="stylesheet">
+    <link href="templates/main.css" rel="stylesheet">
+    <link href="templates/bar-manager.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bower_components/perfect-scrollbar/min/perfect-scrollbar.min.css" />
+</head>
+<body>
+<!-- todo - check if is login -->
+<!--<head-directive ng-show="!window.localStorage.userToken"></head-directive>-->
+<div ng-view></div>
+<!-- JAVASCRIPT SECTION -->
+<!-- Bootstrap / Jquery -->
+<script src="lib/bower_components/jquery/dist/jquery.js"></script>
+<script src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/bower_components/bootstrap-material-design/scripts/ripples.js"></script>
+<script src="lib/bower_components/arrive/src/arrive.js"></script>
+<script src="lib/bower_components/bootstrap-material-design/scripts/material.js"></script>
+<!-- Angular -->
+<script src="lib/bower_components/angular/angular.js"></script>
+<script src="lib/bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
+<script src="lib/bower_components/angular-aria/angular-aria.js"></script>
+<script src="lib/bower_components/angular-animate/angular-animate.js"></script>
+<script src="lib/bower_components/angular-material/angular-material.js"></script>
+<script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+<script src="lib/bower_components/angular-route-styles/route-styles.js"></script>
+<!-- App -->
+<script src="app.js"></script>
+<script src="request-interceptors.js"></script>
+
+<!-- Constants -->
+<script src="Constants.js"></script>
+<!-- Factories -->
+<script src="factories/Utils.js"></script>
+<script src="factories/Http.js"></script>
+<script src="factories/DataFactory.js"></script>
+<!-- Directives -->
+<script src="directives/header-directive.js"></script>
+<!-- Controllers -->
+<script src="controllers/login-controller.js"></script>
+<script src="controllers/main-controller.js"></script>
+<script src="controllers/table-controller.js"></script>
+<script src="controllers/bar-manager-controller.js"></script>
+<script>
+    (function(){
+        $.material.init();
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--<div class="col-md-12 login-header">
+    <h1 class="text-center">Perdoruesi: {{selectedWaiter.name}}</h1>
+</div>-->
+
+
+<div class="col-md-6 waiter-sidebar">
+<input type="button" class= "btn btn-raised  btn-primary " value="Kamarier" ng-click="getWaiters()" style="height: 90px;
+    font-size: 20px; width: 204px;">
+<input ng-repeat="waiter in waiters "
+       ng-class="{'waiter-active': waiter == selectedWaiter}"
+       type="button" class="btn btn-raised  btn-info waiter-btn animated fadeIn"
+       ng-click="selectWaiter(waiter)"
+       value="{{waiter.username}}">
+</div>
+
+<div class="col-md-4 login-buttons">
+    <div class="col">
+        <input type="password" class="form-control password-field" ng-model="password">
+    </div>
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="1" ng-click="appendPass(1)">
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="2" ng-click="appendPass(2)">
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="3" ng-click="appendPass(3)">
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="4" ng-click="appendPass(4)">
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="5" ng-click="appendPass(5)">
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="6" ng-click="appendPass(6)">
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="7" ng-click="appendPass(7)">
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="8" ng-click="appendPass(8)">
+    <input type="button" class="btn btn-raised  btn-info login-btn" value="9" ng-click="appendPass(9)">
+    <button class="btn btn-raised  btn-danger login-btn clean-btn"  ng-click="clean()">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+    </button>
+    <!--<input type="button" class="btn btn-raised  btn-danger login-btn clean-btn" value="clean" ng-click="">-->
+    <input type="button" class="btn btn-raised  btn-info login-btn zero-btn" value="0" ng-click="appendPass(0)">
+    <button class="btn btn-raised  btn-raised btn-success login-btn log-btn " value="Login" href="google.com" ng-click="login()">
+        <span class="glyphicon glyphicon-lock"></span> Login
+    </button>
+    <!--<input type="button" class="btn btn-raised  btn-success login-btn log-btn " value="Login" href="google.com" ng-click="login()">-->
+</div>

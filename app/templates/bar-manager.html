@@ -1,0 +1,109 @@
+<head-directive></head-directive>
+<div class="col-md-12 animated fadeIn bar-manager-container">
+    <!-- Table section -->
+    <div class="col-md-5 tow-sections">
+        <div class="bar-panel-section">
+            <!-- info -->
+            <div class="info-header row">
+                <label class="col-md-6 info-label"
+                       ng-style="{'background-color': mainColor.color}">
+                    Kamarier: {{selectedWaiter.name}}
+                </label>
+                <label class="col-md-6 info-label"
+                       ng-style="{'background-color': mainColor.color}">
+                    Tavolina: {{selectedTable.nr}}
+                </label>
+            </div>
+            <!-- info section -->
+            <div class="bill-info row">
+                <div class="col-md-8">
+                    Pershkrim
+                </div>
+                <div class="col-md-2">
+                    Sasi
+                </div>
+                <div class="col-md-2">
+                    Total
+                </div>
+            </div>
+            <!-- Bill  -->
+            <div class="bill-table">
+                <!-- Products on bill -->
+                <div class="row bill-products"
+                     ng-repeat="product in bill"
+                     ng-class="{'product-active': product == bill[selectedProduct]}"
+                     ng-click="selectBillProduct($index)"
+                     ng-if="product.name != ''">
+                    <div class="col-md-8">
+                        {{product.name}}
+                    </div>
+                    <div class="col-md-2">
+                        {{product.count}}
+                    </div>
+                    <div class="col-md-2">
+                        {{product.total}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--bill buttons section-->
+        <div class="bill-buttons-section row">
+            <button class="btn btn-raised  btn-danger bill-button col-md-3"
+                    ng-disabled="!selectedProduct"
+                    ng-click="deleteBillProduct()">
+                <span class="glyphicon glyphicon-trash"></span>
+            </button>
+            <button class="btn btn-raised  bill-button col-md-3"
+                    ng-disabled="!selectedProduct || bill[selectedProduct].count <= 1 "
+                    ng-class="mainColor.class"
+                    ng-click="countSelectedProduct(false)">
+                <span class="glyphicon glyphicon-menu-down"></span>
+            </button>
+            <button class="btn btn-raised  bill-button col-md-3"
+                    ng-disabled="!selectedProduct"
+                    ng-class="mainColor.class"
+                    ng-click="countSelectedProduct(true)">
+                <span class="glyphicon glyphicon-menu-up"></span>
+            </button>
+            <div class="bill-sum col-md-3">
+                Totali<br>
+                {{total}}.0
+            </div>
+        </div>
+        <div class="bill-buttons-section bill-buttons-section-two row">
+            <button class="btn btn-raised  btn-danger bill-button col-md-6">
+                <span class="glyphicon glyphicon-share-alt"></span>
+                Anulo fatur
+            </button>
+            <button class="btn btn-raised  btn-success bill-button col-md-6">
+                <span class="glyphicon glyphicon-print"></span>
+                Printo fatur
+            </button>
+        </div>
+    </div>
+    <!-- product and category section -->
+    <div class="col-md-7 tow-sections">
+        <!-- Product section -->
+        <div class="col-md-9 products-section">
+            <button class="btn btn-raised  col-md-3 animated fadeIn product-button"
+                    ng-click="choseProduct(product)"
+                    ng-class="mainColor.class"
+                    ng-repeat="product in tempProducts">
+                {{product.name}}
+            </button>
+        </div>
+        <!-- Categorie section -->
+        <div class="col-md-3 product-category" >
+            <button class="btn btn-raised  btn-group-justified prod-category-back"
+            ng-class="mainColor.class">
+                <!--<span class="glyphicon glyphicon-arrow-left"></span>-->
+                Kategorit
+            </button>
+            <button class="btn btn-raised btn-primary btn-group-justified prod-category"
+                    ng-click="selectCategory(category.id)"
+                    ng-repeat="category in categories">
+                {{category.name}}
+            </button>
+        </div>
+    </div>
+</div>

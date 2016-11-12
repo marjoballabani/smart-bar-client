@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "name": "Vodka",
+    "price": 1000,
+    "categoryId": 0
+  },
+  {
+    "id": 1,
+    "name": "Amaro",
+    "price": 40,
+    "categoryId": 0
+  },
+  {
+    "id": 2,
+    "name": "Jager",
+    "price": 30,
+    "categoryId": 0
+  },
+  {
+    "id": 3,
+    "name": "Raki",
+    "price": 200,
+    "categoryId": 0
+  },
+  {
+    "id": 4,
+    "name": "Konjak",
+    "price": 100,
+    "categoryId": 0
+  },
+  {
+    "id": 5,
+    "name": "AMF",
+    "price": 100,
+    "categoryId": 0
+  },
+  {
+    "id": 6,
+    "name": "Kafe",
+    "price": 100,
+    "categoryId": 1
+  }
+]

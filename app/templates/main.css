@@ -1,0 +1,74 @@
+.settings-button {
+    /*min-width: 167.39px;
+    height: 50px;
+    border-radius: 0px;
+    margin-right: -2px;*/
+    /*min-width: 167.39px;*/
+    height: 50px;
+    border-radius: 0px;
+    margin-right: -2px;
+    margin: 0px;
+}
+
+.table-container {
+    margin-top: 30px;
+    /*height: calc(100vh - 60px);*/
+}
+
+.table {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.logout-button {
+    /*float: right;
+    font-size: 25px;
+    min-width: 180px;*/
+    float: right;
+    font-size: 15px;
+    min-width: 75px;
+    height: 50px;
+    margin: 0px;
+}
+
+.toolbar-buttons {
+    /*float: right;
+    font-size: 15px;
+    min-width: 75px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    height: 35px;*/
+    float: right;
+    font-size: 15px;
+    min-width: 75px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    height: 50px;
+}
+
+.toolbar-header {
+    /*padding-right: 2px;
+    padding-left: 0px;
+    background-color: #2B2B2B;
+    height: 36px;*/
+    padding-right: 2px;
+    padding-left: 0px;
+    /*background-color: #2B2B2B;*/
+    height: 50px;
+}
+
+.toolbar-menu-buttons {
+    font-size: 11px;
+    min-width: 75px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    height: 35px;
+}
+
+
