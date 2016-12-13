@@ -7,6 +7,8 @@ For a better user experience Angular Material is implemented
 > Using **angular 1.0** for client side **Node.JS** and **express** for server side
 and **MongoDB** as database this is a **MEAN-stack** project.
 
+## Server side ( [SmartBar server](https://github.com/marjoballabani/smart-bar-server.git "SmartBar server") )
+
 # SmartBar Database structure(MongoDB)
 
 1. user
