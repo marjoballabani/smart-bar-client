@@ -55,23 +55,15 @@ and **MongoDB** as database this is a **MEAN-stack** project.
     
 ## UI
     
-**Main screen**
+**Login screen**
 
-![main](https://s28.postimg.org/wrehmq6sd/main.png)
+![Login](https://s28.postimg.org/3kt7goo8t/smart_client_login.png)
  
-**Filter screen**
+**Table screen**
  
-![filter](https://s28.postimg.org/3nq9qhiot/filter.png) 
+![Table](https://s28.postimg.org/mfoy73oal/smart_client_tables.png) 
 
-**Details screen**
+**Management screen**
  
-![details](https://s28.postimg.org/c4ps1endp/details.png) 
-
-**Destination list screen**
- 
-![list](https://s28.postimg.org/c3fu7zljx/all_list.png)
-
-**Map screen**
- 
-![list](https://s28.postimg.org/b69ez4a1p/map.png) 
+![manage](https://s28.postimg.org/jkbv08kal/smart_client_manage.png) 
 
