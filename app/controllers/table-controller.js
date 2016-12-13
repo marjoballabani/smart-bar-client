@@ -33,7 +33,7 @@ app.controller('tableController', ['$scope', '$rootScope', 'DataFactory', '$loca
                 class: 'btn-warning'
             };
         }
-        $location.path('bar');
-        /*$rootScope.$broadcast('selectTable', []);*/
+        /*$location.path('bar');*/
+        $rootScope.$broadcast('selectTable', []);
     }
 }]);

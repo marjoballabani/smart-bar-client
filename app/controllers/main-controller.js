@@ -10,13 +10,28 @@ app.controller('mainController', ['$scope', '$rootScope', 'DataFactory', '$locat
             template: 'templates/tables.html'
         };
 
+        /**
+         * When u select a table from table controller
+         */
         $rootScope.$on('selectTable', function (data) {
             $scope.selectedView.template = 'templates/bar-manager.html'
         });
+
+        $rootScope.$on('goToTables', function (data) {
+            $scope.selectedView.template = 'templates/tables.html';
+        });
+
+        /**
+         * Go to tables view
+         */
         $scope.goToTables = function () {
-            $location.path('/main');
+            /*$location.path('/main');*/
+            $rootScope.$broadcast('goToTables', []);
         };
 
+        /**
+         * Logout
+         */
         $scope.logOut = function () {
             delete window.localStorage.Token;
             DataFactory.isAuthenticated = false;
@@ -24,12 +39,18 @@ app.controller('mainController', ['$scope', '$rootScope', 'DataFactory', '$locat
             $location.replace();
         };
 
+        /**
+         * TODO - Depricated
+         */
         $scope.minimize = function () {
             var remote = require('remote');
             var window = remote.getCurrentWindow();
             window.minimize();
         };
 
+        /**
+         * TODO - Depricated
+         */
         $scope.close = function () {
             var remote = require('remote');
             var window = remote.getCurrentWindow();

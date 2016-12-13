@@ -25,6 +25,7 @@
     "angular-perfect-scrollbar": "~0.0.4",
     "arrive": "~2.3.0",
     "bootstrap-material-design": "~0.5.7",
-    "ngDialog": "~0.5.1"
+    "ngDialog": "~0.5.1",
+    "animate.css": "^3.5.2"
   }
 }

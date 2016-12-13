@@ -50,7 +50,7 @@ app.controller('loginController', ['$scope', 'DataFactory', '$location',
         $scope.login = function () {
             var data = {
                 username: $scope.selectedWaiter.username,
-                password: $scope.selectedWaiter.password
+                password: $scope.password
             };
             DataFactory.login(data,function (success) {
                 if (!success.success) {
@@ -58,6 +58,7 @@ app.controller('loginController', ['$scope', 'DataFactory', '$location',
                 } else {
                     window.localStorage.Token = success.token;
                     DataFactory.isAuthenticated = true;
+                    $scope.selectedWaiter = DataFactory.selectedWaiter = success.data;
                     $location.path("main")
                     
                 }

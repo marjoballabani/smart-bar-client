@@ -13,10 +13,10 @@ app.config(['$routeProvider', function ($routeProvider) {
                 templateUrl: 'templates/main.html',
                 controller: 'mainController'
             })
-            .when('/bar', {
+            /*.when('/bar', {
                 templateUrl: 'templates/bar-manager.html',
                 controller: 'barManagerController'
-            });
+            });*/
 
 
     }])
