@@ -52,3 +52,26 @@ and **MongoDB** as database this is a **MEAN-stack** project.
     - **#** ID
     - count
     - **$** product_id
+    
+## UI
+    
+**Main screen**
+
+![main](https://s28.postimg.org/wrehmq6sd/main.png)
+ 
+**Filter screen**
+ 
+![filter](https://s28.postimg.org/3nq9qhiot/filter.png) 
+
+**Details screen**
+ 
+![details](https://s28.postimg.org/c4ps1endp/details.png) 
+
+**Destination list screen**
+ 
+![list](https://s28.postimg.org/c3fu7zljx/all_list.png)
+
+**Map screen**
+ 
+![list](https://s28.postimg.org/b69ez4a1p/map.png) 
+
